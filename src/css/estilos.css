@@ -2,55 +2,47 @@ body{
     font-family: "Chakra Petch";
     max-width: 100%;
     margin: 0 auto;
-    background-color: aqua;
+    background-color:#545454;
 }
 
-.conteudo {
-    position: fixed;
-    top: 15%;
-    left: 10%;
+header, footer {
+    background: #343434;
+    display: flex;
+    align-items: center;
+    height: 12vh;
+    position: absolute;
+    width: 100%;
+}
+
+header {
+    box-shadow: 1px 1px 4px gray;
+    top: 0;
+}
+
+footer {
+    box-shadow: 1px 1px 4px gray;
+    bottom: 0;
+}
+
+main {
+    height: 76vh;
+    margin-top: 14vh;
+    margin-left: 10vh;
 }
 
 .menu {
-    position: fixed;
-    top: 0;
-    padding: 1%;
-    width: 80%;
-    height: 10%;
-    background-color: antiquewhite;
-}
-
-.botoes-menu
-
-.informacoes {
-    position: fixed;
-    top: 15%;
-    width: 80%;
-    height: 65%;
-    background-color:blue;
-}
-
-.rodape {
-    position: fixed;
-    bottom: 5%;
-    height: 10%;
-    width: 80%;
-    padding: .5%;
     display: flex;
-    flex-direction: column;
-
-    background-color: brown;
+    gap: 15px;
+    max-height: 5vh;
+    max-width: 50vh;
+    position: fixed;
+    left: 10vh;
 }
 
-.sociais .sociais-icon{
-    position: fixed;
-    bottom: 5%;
-    max-width: 20%;
-    max-height: 20px;
-    flex-direction: row;
-    
-    
-    
-
-    background-color:blueviolet;
+.btn {
+    background-color:#545454;
+    border-radius: 20%;
+    border-color: #ffde59;
+    color:#ffde59;
+    width: 200px;
 }
