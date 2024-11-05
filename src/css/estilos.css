@@ -3,31 +3,32 @@ body{
     max-width: 100%;
     margin: 0 auto;
     background-color:#545454;
+    background-image: url("../imagens/fundo2.png");
 }
 
 header, footer {
     background: #343434;
     display: flex;
-    align-items: center;
     height: 12vh;
     position: absolute;
     width: 100%;
+    overflow: hidden;
+    align-items: center;
 }
 
 header {
-    box-shadow: 1px 1px 4px gray;
+    box-shadow: 1px 1px 4px #808080;
     top: 0;
 }
 
 footer {
-    box-shadow: 1px 1px 4px gray;
+    box-shadow: 1px 1px 4px #808080;
     bottom: 0;
 }
 
 main {
     height: 76vh;
-    margin-top: 14vh;
-    margin-left: 10vh;
+    margin-top: 12vh;
 }
 
 .menu {
@@ -41,8 +42,73 @@ main {
 
 .btn {
     background-color:#545454;
-    border-radius: 20%;
+    border-radius: 5vh;
     border-color: #ffde59;
     color:#ffde59;
-    width: 200px;
+    width: 120px;
+    height: 30px;
+    font-family: "Goldman";
+    font-size: 2.1vh;
+}
+
+.btn.destacado {
+    background-color:#ffde59;
+    border-color: #545454;
+    color:#545454;
+}
+
+.conteudo {
+    height: 76vh;
+}
+
+.informacoes {
+    padding: 5vh 50% 5vh 10vh;
+    height: 76vh;
+    font-size: 24px;
+    line-height: 40px;
+    overflow: auto;
+}
+
+.texto {
+    background-color: rgba(128, 128, 128, 0.5);
+    border-radius: 1%;
+    padding: 1vh;
+}
+
+.informacoes h1{
+    font-size: 48px;
+    letter-spacing: 4px;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #ffde59;
+}
+
+.informacoes p{
+    letter-spacing: 1.5px;
+    text-align: justify;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+footer .sociais {
+    top: 0;
+    margin-left: 10vh;
+    width: 30vh;
+    height: 8vh;
+    padding-top: 1vh;
+    padding-left: 2vh;
+    background-color: #ffde59;
+    border-radius: 40vh;
+}
+
+.sociais p{
+    font-size: 2.2vh;
+    font-weight: bold;
+}
+
+footer .sociais-icon {
+    margin-top: 0.28vh;
+    height: 2.8vh;
+    background-color: #ffffff;
+    border-radius: 10%;
 }
