@@ -3,7 +3,7 @@ body {
     max-width: 100%;
     margin: 0 auto;
     background-color: #545454;
-    background-image: url("../imagens/fundo2.png");
+    background-image: url("../imagens/fundo.png");
 }
 
 header,
@@ -71,7 +71,8 @@ main {
 }
 
 .texto {
-    background-color: rgba(128, 128, 128, 0.5);
+    /* background-color: rgba(128, 128, 128, 0.5); */
+    background-color: rgba(100, 100, 100, 0.5);
     border-radius: 1%;
     padding: 1vh;
 }
@@ -131,22 +132,45 @@ footer .sociais-icon {
     background-color: #ffffff;
 }
 
+.texto.contato{
+    color: #ffde59;
+    display: flex;
+    flex-direction: column;
+    max-width: 50vh;
+    align-items: center;
+}
+
+
+.box-form {
+    background-color: #545454;
+    border-radius: 4vh;
+    width: 45vh;
+    padding: 1vh 2vh 2vh 2vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.form {
+    width: 40vh;
+    height: 2.5vh;
+    margin-bottom: 1vh;
+    display: block;
+}
+
+.form.msg {
+    height: 10vh;
+    max-height: 10vh;
+    max-width: 100%;
+    margin-top: 1.2vh;
+    word-break: normal;
+    resize: none;
+}
+
 .contato-sociais {
+    margin-top: 2vh;
     line-height: normal;
     display: flex;
     flex-direction: row;
     gap: 1vh;
     align-items: center;
-}
-
-.box-form {
-    background-color: #545454;
-    border-radius: 4vh;
-    padding: 1vh 2vh 2vh 1vh;
-    display: flex;
-    flex-direction: column;
-}
-
-.box-form .form {
-    
 }
