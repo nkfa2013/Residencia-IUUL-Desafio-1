@@ -87,9 +87,17 @@ main {
     margin-left: 21vh;
 }
 
-.texto.portfolio video{
-    controls-width: "500";
-    autopla
+.texto.portfolio video {
+    position: relative;
+    max-width: 64rem;
+    width: 100%;
+    max-height: 30.875rem;
+    height: 100%;
+    margin: 1.25rem auto;
+    margin-bottom: 8vh;
+    padding: 1vh;
+    background-color: #666;
+    border-radius: 2vh;
 }
 
 .informacoes h1 {
