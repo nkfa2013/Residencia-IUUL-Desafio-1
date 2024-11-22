@@ -14,6 +14,7 @@
 
     <link rel="stylesheet" href="./src/css/reset.css" />
     <link rel="stylesheet" href="./src/css/estilos.css" />
+    <link rel="stylesheet" href="./src/css/responsivo.css" />
 
 </head>
 
@@ -31,11 +32,11 @@
                 <div class="texto contato">
                     <h3>Entre em Contato:</h3>
                     <div class="box-form">
-                        <form action="">
+                        <form id="formulario">
                             <h6>Envie um e-mail</h6>
 
                             <div class="form">
-                                <input class="form" type="text" name="name" id="name" placeholder=" Nome" required />
+                                <input class="form" type="text" name="nome" id="nome" placeholder=" Nome" required />
                             </div>
                             <div class="form">
                                 <input class="form" type="email" name="email" id="email" placeholder=" E-mail"
@@ -49,6 +50,8 @@
                                 <input class="btn" type="submit" value="Enviar" />
                             </div>
                         </form>
+
+                        <a style="font-size: small;" href="lista-ctt.html">Ver Mensagens</a>
                     </div>
                     <div class="contato-sociais">
                         <h5>Outros contatos:</h6>
@@ -77,6 +80,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="./src/js/contato.js"></script>
 </body>
 
 </html>

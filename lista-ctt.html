@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Portifólio Nikolas Ferreira</title>
+    <title>Lista de Contatos - Portifólio Nikolas Ferreira</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,12 +29,32 @@
     <main>
         <div class="conteudo">
             <div class="informacoes">
-                <div class="texto">
-                    <h1>Titulo da Pagina</h1>
-                    <p>Formando em Ciência da Computação na UVA com experiência nível Júnior em Java, JavaScript, HTML,
-                        CSS e conhecimento em C#. Atualmente gerencio site de uma Organização Militar. Tenho
-                        experiências anteriores com Redes, Suporte de TI (Hardware e Software), S.O. e Design Gráfico.
-                    </p>
+                <div class="texto lista">
+
+                    <div class="menu-lista">
+                        <button class="btn" onclick="listar()">Listar</button>
+                        <button style="max-width: fit-content;" class="btn" id="apagar-todas" alt="Apagar Todas"><img
+                                class="icon" src="./src/imagens/icone-lixeira.png"></button>
+                    </div>
+                    <br><br>
+                    <h1 style="text-decoration: underline;">Mensagens Recebidas:</h1>
+
+                    <table class="tabela-lista">
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>E-mail</th>
+                                <th>Mensagem</th>
+                                <th>Data</th>
+                                <th class="td-apagar"></th>
+                            </tr>
+                        </thead>
+                        <tbody id="lista">
+                            <!-- <div id="lista">
+
+                            </div> -->
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
@@ -51,6 +71,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="./src/js/lista.js"></script>
 </body>
 
 </html>

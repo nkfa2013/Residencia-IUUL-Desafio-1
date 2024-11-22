@@ -2,7 +2,6 @@ body {
     font-family: "Chakra Petch";
     max-width: 100%;
     margin: 0 auto;
-    background-color: #545454;
     background-image: url("../imagens/fundo.png");
 }
 
@@ -60,10 +59,11 @@ main {
 
 .conteudo {
     height: 76vh;
+    align-items: center;
 }
 
 .informacoes {
-    padding: 5vh 50% 5vh 10vh;
+    padding: 5vh 10vh 5vh 10vh;
     height: 76vh;
     font-size: 24px;
     line-height: 40px;
@@ -77,27 +77,40 @@ main {
     padding: 1vh;
 }
 
-.texto.portfolio img {
-    max-height: 50vh;
-    max-width: 50vh;
+.texto.portfolio .port_img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.port_img img {
+    max-height: 100%;
+    max-width: 100%;
+    width: 500px;
+    height: 300px;
     border-color: #ffde59;
     border-width: 1vh;
     border-style: solid;
     border-radius: 25%;
-    margin-left: 21vh;
 }
 
-.texto.portfolio video {
+.port_img video {
     position: relative;
-    max-width: 64rem;
-    width: 100%;
-    max-height: 30.875rem;
+    max-width: 100%;
+    /* width: 54rem; */
+    max-height: 38.875rem;
     height: 100%;
     margin: 1.25rem auto;
     margin-bottom: 8vh;
     padding: 1vh;
     background-color: #666;
     border-radius: 2vh;
+}
+
+.port_img a {
+    width: 500px;
+    height: 300px;
+    max-width: 100%;
 }
 
 .informacoes h1 {
@@ -181,8 +194,13 @@ footer .sociais-icon {
     flex-direction: column;
 }
 
+.box-form h6 {
+    font-size: 100%;
+}
+
 .form {
     width: 40vh;
+    max-width: 100%;
     height: 2.5vh;
     margin-bottom: 1vh;
     display: block;
@@ -204,4 +222,40 @@ footer .sociais-icon {
     flex-direction: row;
     gap: 1vh;
     align-items: center;
+}
+
+.tabela-lista table {
+
+    max-width: 100%;
+    margin: 20px 0;
+    font-size: 2.1vh;
+}
+
+.tabela-lista th,
+td {
+    border: 1px solid #ffde59;
+    padding: 8px;
+    text-align: left;
+    color: #ffde59;
+
+}
+
+.tabela-lista .td-apagar {
+    display: contents;
+    max-width: 100%;
+    align-items: center;
+}
+
+.td-apagar .btn {
+    margin: 10%;
+}
+
+.tabela-lista th {
+    background-color: #545454;
+}
+
+.lista .menu-lista {
+    display: flex;
+    gap: 15px;
+    position: relative;
 }
