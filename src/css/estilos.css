@@ -224,11 +224,15 @@ footer .sociais-icon {
     align-items: center;
 }
 
-.tabela-lista table {
+.tabela-lista {
+    align-items: center;
+    width: 100%;
+}
 
-    max-width: 100%;
-    margin: 20px 0;
+.tabela-lista table {
+    margin: 20px;
     font-size: 2.1vh;
+    width: 100%;
 }
 
 .tabela-lista th,
@@ -237,7 +241,7 @@ td {
     padding: 8px;
     text-align: left;
     color: #ffde59;
-
+    font-weight: bold;
 }
 
 .tabela-lista .td-apagar {
@@ -258,4 +262,8 @@ td {
     display: flex;
     gap: 15px;
     position: relative;
+}
+
+.td-apagar .btn {
+    max-width: fit-content;
 }

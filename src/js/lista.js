@@ -15,7 +15,7 @@ function listar() {
                                 <td>${contato.email}</td>
                                 <td>${contato.msg}</td>
                                 <td>${contato.data}</td>
-                                <td class="td-apagar"><button class="btn" data-index="${indice}" onclick="apagarMensagem()" style="max-width: fit-content;" id="apagar" alt="Apagar"><img class="icon" src="./src/imagens/icone-lixeira.png"></button></td>                
+                                <td class="td-apagar"><button class="btn" data-index="${indice}" onclick="apagarMensagem()" id="apagar" alt="Apagar"><img class="icon" src="./src/imagens/icone-lixeira.png"></button></td>                
                 `;
 
         contatosContainer.appendChild(linhaMensagem);

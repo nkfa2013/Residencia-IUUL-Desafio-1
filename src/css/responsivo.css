@@ -15,6 +15,18 @@
         max-width: 100%;
     }
 
+    .tabela-lista {
+        font-size: 68%;
+        max-width: 100%;
+    }
+
+    .texto.lista {
+        align-items: center;
+    }
+    .texto.lista h1 {
+        font-size: xx-large;
+    }
+
 }
 
 @media (max-width: 768px) {
@@ -48,7 +60,17 @@
 
     .port_img a{
         max-width: 80%;
-        
+    }
+
+    .tabela-lista {
+        font-size: 18%;
+    } 
+
+    .texto.lista {
+        align-items: center;
+    }
+    .texto.lista h1 {
+        font-size: xx-large;
     }
 
 
